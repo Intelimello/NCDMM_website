@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>top_panel</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      .dropdown-hover:hover > .dropdown-menu {
+        display: inline-block;
+      }
+
+      .dropdown-hover > .dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container" style="background-color:aliceblue;">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler px-0"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExampleOnHover"
+            aria-controls="navbarExampleOnHover"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+            <!-- Left links -->
+            <ul
+              class="navbar-nav me-auto ps-lg-0"
+              style="padding-left: 0.15rem"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">NCDMM 2023</a>
+              </li>
+              <!-- Navbar dropdown A -->
+              <li class="nav-item dropdown dropdown-hover position-static">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <!-- Dropdown menu  -->
+                <div
+                  class="dropdown-menu w-100 mt-0"
+                  aria-labelledby="navbarDropdown"
+                  style="border-top-left-radius: 0; border-top-right-radius: 0"
+                >
+                  <div class="container">
+                    <div class="row my-4">
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="list-group list-group-flush">
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Host Institute</a
+                          >
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Department of Civil Engineering</a
+                          >
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Committee</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Navbar dropdown B -->
+              <li class="nav-item dropdown dropdown-hover position-static">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Important Links
+                </a>
+                <!-- Dropdown menu -->
+                <div
+                  class="dropdown-menu w-100 mt-0"
+                  aria-labelledby="navbarDropdown"
+                  style="border-top-left-radius: 0; border-top-right-radius: 0"
+                >
+                  <div class="container">
+                    <div class="row my-4">
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="list-group list-group-flush">
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Registration</a
+                          >
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Abstract Submission</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown dropdown-hover position-static">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact us
+                </a>
+                <!-- Dropdown menu -->
+                <div
+                  class="dropdown-menu w-100 mt-0"
+                  aria-labelledby="navbarDropdown"
+                  style="border-top-left-radius: 0; border-top-right-radius: 0"
+                >
+                  <div class="container">
+                    <div class="row my-4">
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="list-group list-group-flush">
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Institute</a
+                          >
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >Hosting Committee</a
+                          >
+                          <a
+                            href=""
+                            class="list-group-item list-group-item-action"
+                            >NCDMM</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+        </div>
+      </nav>
+    </section>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
